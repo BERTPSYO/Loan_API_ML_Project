@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/4f5aaddaf05e498e8874ca9c5972959f/artifacts
+end_time: 1697305322292
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4f5aaddaf05e498e8874ca9c5972959f
+run_name: big-moose-50
+run_uuid: 4f5aaddaf05e498e8874ca9c5972959f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697305217107
+status: 3
+tags: []
+user_id: Bertr

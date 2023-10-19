@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/a54d9f9f5b974062a8aeefd208c6af6d/artifacts
+end_time: 1697305023294
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a54d9f9f5b974062a8aeefd208c6af6d
+run_name: welcoming-wren-147
+run_uuid: a54d9f9f5b974062a8aeefd208c6af6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697304173471
+status: 3
+tags: []
+user_id: Bertr

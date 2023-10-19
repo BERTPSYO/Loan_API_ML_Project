@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/f315facc4cb9432d93a624df8acd7d4c/artifacts
+end_time: 1697217044106
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f315facc4cb9432d93a624df8acd7d4c
+run_name: debonair-asp-322
+run_uuid: f315facc4cb9432d93a624df8acd7d4c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697216493647
+status: 3
+tags: []
+user_id: Bertr

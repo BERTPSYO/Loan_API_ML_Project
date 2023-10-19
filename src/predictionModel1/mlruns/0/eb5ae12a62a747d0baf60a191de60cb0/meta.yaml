@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/eb5ae12a62a747d0baf60a191de60cb0/artifacts
+end_time: 1697484899072
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eb5ae12a62a747d0baf60a191de60cb0
+run_name: useful-steed-113
+run_uuid: eb5ae12a62a747d0baf60a191de60cb0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697484818957
+status: 3
+tags: []
+user_id: Bertr

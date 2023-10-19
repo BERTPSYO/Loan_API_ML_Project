@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/67d202e8862646b6ab0d29c0241f8852/artifacts
+end_time: 1697382502493
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 67d202e8862646b6ab0d29c0241f8852
+run_name: peaceful-jay-333
+run_uuid: 67d202e8862646b6ab0d29c0241f8852
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697382399743
+status: 3
+tags: []
+user_id: Bertr

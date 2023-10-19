@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/854efdfea530481c9704f040a151e431/artifacts
+end_time: 1697486551963
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 854efdfea530481c9704f040a151e431
+run_name: mysterious-squid-26
+run_uuid: 854efdfea530481c9704f040a151e431
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697486476994
+status: 3
+tags: []
+user_id: Bertr
