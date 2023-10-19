@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/223bd81de34b4f80adae327f649f8833/artifacts
+end_time: 1697485149159
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 223bd81de34b4f80adae327f649f8833
+run_name: welcoming-goose-182
+run_uuid: 223bd81de34b4f80adae327f649f8833
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697485073460
+status: 3
+tags: []
+user_id: Bertr

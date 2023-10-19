@@ -1,0 +1,13 @@
+digest: 0c4d92ee
+name: dataset
+profile: '{"num_rows": 7477361, "num_elements": 74773610}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "Amount Requested"}, {"type":
+  "double", "name": "Debt-To-Income Ratio"}, {"type": "double", "name": "Employment
+  Length"}, {"type": "double", "name": "policy_code"}, {"type": "double", "name":
+  "risk_score"}, {"type": "double", "name": "missing_Amount Requested"}, {"type":
+  "double", "name": "missing_Debt-To-Income Ratio"}, {"type": "double", "name": "missing_Employment
+  Length"}, {"type": "double", "name": "missing_policy_code"}, {"type": "double",
+  "name": "missing_risk_score"}]}'
+source: '{"tags": {"mlflow.user": "Bertr", "mlflow.source.name": "C:\\Python311\\Lib\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

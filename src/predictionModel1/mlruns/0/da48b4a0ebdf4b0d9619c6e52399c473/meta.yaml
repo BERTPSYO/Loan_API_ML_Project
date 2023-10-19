@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/da48b4a0ebdf4b0d9619c6e52399c473/artifacts
+end_time: 1697389838847
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: da48b4a0ebdf4b0d9619c6e52399c473
+run_name: receptive-snake-165
+run_uuid: da48b4a0ebdf4b0d9619c6e52399c473
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697389725054
+status: 3
+tags: []
+user_id: Bertr

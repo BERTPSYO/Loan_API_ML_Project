@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/4be9fdd1467f4ce0b85df78bc1995119/artifacts
+end_time: 1697317088263
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4be9fdd1467f4ce0b85df78bc1995119
+run_name: chill-calf-500
+run_uuid: 4be9fdd1467f4ce0b85df78bc1995119
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697316983669
+status: 3
+tags: []
+user_id: Bertr

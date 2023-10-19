@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/a35bbecfd068453f92df46dcb9f270da/artifacts
+end_time: 1697226774371
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a35bbecfd068453f92df46dcb9f270da
+run_name: righteous-gnu-65
+run_uuid: a35bbecfd068453f92df46dcb9f270da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697225838262
+status: 3
+tags: []
+user_id: Bertr
