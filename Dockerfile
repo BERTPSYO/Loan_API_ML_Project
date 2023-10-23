@@ -1,16 +1,23 @@
-From python:3.10-slim
+# Use the official Python image as a parent image
+FROM python:3.10-slim
 
+# Install pipenv
 RUN pip install pipenv
 
+# Set the working directory
 WORKDIR /app
 
-COPY ["Pipfile","Pipfile.lock","./"]
+# Copy Pipfiles for dependencies
+COPY ["Pipfile", "Pipfile.lock", "./"]
 
+# Install dependencies with pipenv
 RUN pipenv install --deploy --system
 
+# Copy the API and predictionModel files
+COPY ["./src/API", "./src/predictionModels"]
 
-COPY ["./src/predictionModel1/model_Pred_1.bin", "./src/predictionModel1/ModelPred.py", "./src/predictionModel1/"]
-
+# Expose the port your FastAPI app will run on
 EXPOSE 9696
 
-ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:9696", "src.predictionModel1.ModelPred:app"]
+# Set the entry point to run your FastAPI app
+ENTRYPOINT ["pipenv", "run", "uvicorn", "src.API.main:app", "--host", "0.0.0.0", "--port", "9696","--reload"]

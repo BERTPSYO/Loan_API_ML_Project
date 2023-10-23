@@ -7,7 +7,6 @@ import pickle
 import numpy as np
 import pandas as pd
 import json 
-from flask import Flask , request , jsonify
 
 
 import os
@@ -60,15 +59,9 @@ def Dataformater(data):
 
 
 
-
-app = Flask("predLoan")
-
-
-
                  
 
-@app.route('/predict',methods=['POST'])
-def predict():
+def predict_loan_acceptation():
 
     json_loan_client_info = request.get_json()
     
@@ -78,12 +71,7 @@ def predict():
         'accepted_pred':pred.tolist()
     }
 
-    return jsonify(result)
-
-
-
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0',port =9696)
+    return result
 
 
 
