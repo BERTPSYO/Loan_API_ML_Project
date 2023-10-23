@@ -57,12 +57,12 @@ def Dataformater(data):
 
                  
 
-def predict_loan_acceptation():
+def predict_loan_acceptation(input_data):
 
-    json_loan_client_info = request.get_json()
+ 
     
     
-    pred = model.predict(Dataformater(json_loan_client_info))
+    pred = model.predict(Dataformater(input_data))
     result = {
         'accepted_pred':pred.tolist()
     }
