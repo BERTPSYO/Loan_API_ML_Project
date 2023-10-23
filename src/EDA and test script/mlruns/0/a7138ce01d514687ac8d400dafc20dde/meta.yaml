@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/a7138ce01d514687ac8d400dafc20dde/artifacts
+end_time: 1697556518705
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a7138ce01d514687ac8d400dafc20dde
+run_name: polite-cow-124
+run_uuid: a7138ce01d514687ac8d400dafc20dde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697556431046
+status: 3
+tags: []
+user_id: Bertr

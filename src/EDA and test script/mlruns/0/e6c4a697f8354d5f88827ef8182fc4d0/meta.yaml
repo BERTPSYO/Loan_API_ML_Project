@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/e6c4a697f8354d5f88827ef8182fc4d0/artifacts
+end_time: 1697307737305
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e6c4a697f8354d5f88827ef8182fc4d0
+run_name: shivering-sponge-488
+run_uuid: e6c4a697f8354d5f88827ef8182fc4d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697307616606
+status: 3
+tags: []
+user_id: Bertr

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/5f134aff54dc43cb84c8f2df7e131623/artifacts
+end_time: 1697486121568
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5f134aff54dc43cb84c8f2df7e131623
+run_name: unique-sloth-487
+run_uuid: 5f134aff54dc43cb84c8f2df7e131623
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697486051071
+status: 3
+tags: []
+user_id: Bertr

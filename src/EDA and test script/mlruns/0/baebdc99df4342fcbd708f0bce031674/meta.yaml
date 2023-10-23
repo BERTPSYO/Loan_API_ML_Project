@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/baebdc99df4342fcbd708f0bce031674/artifacts
+end_time: 1697487863665
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: baebdc99df4342fcbd708f0bce031674
+run_name: wise-hawk-612
+run_uuid: baebdc99df4342fcbd708f0bce031674
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697487775388
+status: 3
+tags: []
+user_id: Bertr
