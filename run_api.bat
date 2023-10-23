@@ -23,7 +23,7 @@ set HOST_PORT=9696
 set CONTAINER_PORT=9696
 
 :: Run the Docker container
-docker run --name %CONTAINER_NAME% -it --rm -p %HOST_PORT%:%CONTAINER_PORT% -d %IMAGE_NAME%:%TAG% > nul
+docker run --name %CONTAINER_NAME% -it --rm -p %HOST_PORT%:%CONTAINER_PORT% -d %IMAGE_NAME%:%TAG%
 
 echo Docker container started and ready to use
 echo Simply press a key to close it
