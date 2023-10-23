@@ -14,10 +14,12 @@ COPY ["Pipfile", "Pipfile.lock", "./"]
 RUN pipenv install --deploy --system
 
 # Copy the API and predictionModel files
-COPY ["./src/API", "./src/predictionModels"]
+
+COPY ["./src", "./src"]
 
 # Expose the port your FastAPI app will run on
 EXPOSE 9696
 
 # Set the entry point to run your FastAPI app
-ENTRYPOINT ["pipenv", "run", "uvicorn", "src.API.main:app", "--host", "0.0.0.0", "--port", "9696","--reload"]
+ENTRYPOINT ["pipenv", "run", "uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "9696","--reload"]
+
