@@ -86,13 +86,13 @@
         <input type="text" id="debt" name="debt" oninput="formatNumber(this)"><br>
 
         <label for="employment">Employment Length (years):</label>
-        <input type="number" id="employment" name="employment"><br>
+        <input type="number" id="employment" name="employment"  min="0" max="99"><br>
 
         <label for="policy">Policy Code:</label>
-        <input type="number" id="policy" name="policy"><br>
+        <input type="number" id="policy" name="policy"  min="0" max="9"><br>
 
         <label for="score">Risk Score:</label>
-        <input type="number" id="score" name="score"><br>
+        <input type="number" id="score" name="score"  min="0" max="999"><br>
 
         <input type="submit" value="Submit">
     </form>
