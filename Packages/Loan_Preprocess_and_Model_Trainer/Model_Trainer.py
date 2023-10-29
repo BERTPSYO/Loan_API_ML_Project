@@ -28,6 +28,14 @@ from sklearn.metrics import ConfusionMatrixDisplay
 
 
 def Train_SGD_Classifier(X_train, y_train):
+    """
+    Train a SGD Classifier form the train dataset.
+
+    Log the result in Mlflow
+    
+    Return the trained model
+
+    """
     
     mlflow.sklearn.autolog()
     
@@ -42,6 +50,12 @@ def Train_SGD_Classifier(X_train, y_train):
 
 
 def Test_SGD_Classifier(model , X_test , y_test):
+    """
+    Test the SGD Classifier model with the test dataset.
+
+    Log the accuracy_score, roc_auc_score and a confusion matrix of the result in Mlflow
+    
+    """
 
     y_pred = model.predict(X_test)
 

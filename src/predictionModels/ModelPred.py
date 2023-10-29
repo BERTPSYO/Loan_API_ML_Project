@@ -7,15 +7,21 @@ import json
 
 import os
 
+#import the model
 script_dir = os.path.dirname(os.path.abspath(__file__))
 model_file_path = os.path.join(script_dir, 'model_Pred_1.bin')
 
+#unpack the scaler, numerical_imputer and model form the bin file
 with open(model_file_path, 'rb') as f_in:
     (scaler, numerical_imputer, model) = pickle.load(f_in)
 
 
 def Dataformater(data):
+    """
+    Transform the data received by the API so that it match
+    the input format of the model
 
+    """
     
 
      # Extract and assign values to variables
@@ -47,11 +53,10 @@ def Dataformater(data):
     # Create a numpy array from the extracted values
     loan_client_info = np.array([x1, x2, x3, x4, x5, x6, x7, x8, x9, x10])
 
-    print(loan_client_info)
     # Reshape the array for further processing (if needed)
     loan_client_info = loan_client_info.reshape(1, -1)
 
-    print(scaler.transform(loan_client_info))
+
     # Return the formatted data (assuming you have the 'scaler' defined elsewhere)
     return scaler.transform(loan_client_info)
 
@@ -60,16 +65,20 @@ def Dataformater(data):
                  
 
 def predict_loan_acceptation(input_data):
+    """
+    Take the raw data and predict  if the loan should be accepted of refused
 
- 
+    return a string
+    """
+
+    #use the Dataformater function to format the data for the model
     formatted_data = Dataformater(input_data)
     
 
-    
+    #make the prediction
     pred = model.predict(formatted_data)
     
-    print(pred[0])
-
+    #convert the bool prediciton to a string
     if pred == 1:
         result = "The loan should be accepted"
     else :

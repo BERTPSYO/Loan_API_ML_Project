@@ -108,7 +108,7 @@ def DataPreprocessing(df_accepted , df_rejected):
     X_train = scaler.fit_transform(X_train)
     X_test = scaler.transform(X_test)
     
-
+    #packageing the train and test dataset into an array
     preprocessed_DataSet = [X_train,X_test,y_train,y_test]
 
 
@@ -123,6 +123,11 @@ def DataPreprocessing(df_accepted , df_rejected):
 
 
 def P2f(x):
+    """
+    Remove the percent "%" symbol from a string and return a float.
+    Return a NaN if the string is empty
+    
+    """
     if pd.notna(x) and not isinstance(x, float):
         return float(x.strip('%'))
     return np.NaN
@@ -130,6 +135,12 @@ def P2f(x):
 
     
 def Stringremover(x):
+    """
+
+    Remove any non-numerical character from a string.
+    Return a NaN if the string is empty
+    
+    """
     if pd.notna(x) and not x == "":
         return re.sub("[^0-9]", "", str(x))
     return np.NaN
