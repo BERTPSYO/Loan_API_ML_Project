@@ -1,6 +1,12 @@
 @echo off
 
-
+::Check if Docker is running
+docker info > nul 2>&1
+if %errorlevel% neq 0 (
+    echo Docker is not running.
+    pause
+    goto :EOF
+)
 
 :: Define the Docker image name and tag
 set IMAGE_NAME=pred_loan

@@ -80,10 +80,10 @@
     <a class="back-button" href="/">Back</a>
     <form method="post" action="/predict" onsubmit="return validateForm()">
         <label for="amount">Amount Requested ($):</label>
-        <input type="number" id="amount" name="amount"><br>
+        <input type="text" id="amount" name="amount" oninput="formatNumber(this)"><br>
 
         <label for="debt">Debt-To-Income Ratio:</label>
-        <input type="number" id="debt" name="debt"><br>
+        <input type="text" id="debt" name="debt" oninput="formatNumber(this)"><br>
 
         <label for="employment">Employment Length (years):</label>
         <input type="number" id="employment" name="employment"><br>
@@ -115,6 +115,22 @@
                 return false; // Prevent form submission
             }
             return true; // Form will submit if at least one field is filled
+        }
+        function formatNumber(input) {
+            // Remove any non-numeric characters except for a single decimal point
+            let value = input.value.replace(/[^0-9.]/g, '');
+
+            // Split the value into integer and decimal parts
+            let parts = value.split('.');
+
+            // Format the integer part with spaces every 3 digits
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+
+            // Combine the integer and decimal parts
+            value = parts[0] + (parts[1] !== undefined ? '.' + parts[1] : '');
+            
+            // Update the input field with the formatted value
+            input.value = value;
         }
     </script>
 </body>

@@ -29,24 +29,26 @@ async def read_loan_prediction(request: Request):
 # Handle form submission
 @app.post("/predict")
 async def predict(request: Request,
-    amount: float = Form(None),
-    debt: float = Form(None),
-    employment: float = Form(None),
-    policy: float = Form(None),
-    score: float = Form(None),
+     amount: str = Form(None),
+    debt: str = Form(None),
+    employment: str = Form(None),
+    policy: str = Form(None),
+    score: str = Form(None),
 ):
-    # Handle form submission and prediction here
-    # Convert empty values to None
-    if amount == "":
-        amount = None
-    if debt == "":
-        debt = None
-    if employment == "":
-        employment = None
-    if policy == "":
-        policy = None
-    if score == "":
-        score = None
+     # Helper function to clean and parse input fields
+    def clean_and_parse(input_str):
+        if input_str is None:
+            return None
+        return float(input_str.replace(" ", ""))
+
+    # Clean and parse input fields
+    amount = clean_and_parse(amount)
+    debt = clean_and_parse(debt)
+    employment = clean_and_parse(employment)
+    policy = clean_and_parse(policy)
+    score = clean_and_parse(score)
+
+        
     input_data = {
         "Amount Requested": amount,
         "Debt-To-Income Ratio": debt,
