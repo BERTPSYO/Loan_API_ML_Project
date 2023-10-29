@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/1108354db0934c729c4a66d3b875d6ea/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1108354db0934c729c4a66d3b875d6ea
+run_name: mysterious-skink-756
+run_uuid: 1108354db0934c729c4a66d3b875d6ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698256939079
+status: 1
+tags: []
+user_id: bertr

@@ -47,9 +47,11 @@ def Dataformater(data):
     # Create a numpy array from the extracted values
     loan_client_info = np.array([x1, x2, x3, x4, x5, x6, x7, x8, x9, x10])
 
+    print(loan_client_info)
     # Reshape the array for further processing (if needed)
     loan_client_info = loan_client_info.reshape(1, -1)
 
+    print(scaler.transform(loan_client_info))
     # Return the formatted data (assuming you have the 'scaler' defined elsewhere)
     return scaler.transform(loan_client_info)
 
@@ -60,12 +62,19 @@ def Dataformater(data):
 def predict_loan_acceptation(input_data):
 
  
+    formatted_data = Dataformater(input_data)
     
+
     
-    pred = model.predict(Dataformater(input_data))
-    result = {
-        'accepted_pred':pred.tolist()
-    }
+    pred = model.predict(formatted_data)
+    
+    print(pred[0])
+
+    if pred == 1:
+        result = "The loan should be accepted"
+    else :
+        result = "The loan should be rejected"
+        
 
     return result
 

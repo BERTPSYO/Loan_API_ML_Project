@@ -1,0 +1,10 @@
+digest: 3fb5578b
+name: dataset
+profile: '{"features_shape": [7477361, 10], "features_size": 74773610, "features_nbytes":
+  598188880}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float64\", \"shape\": [-1, 10]}}]", "targets": null}}'
+source: '{"tags": {"mlflow.user": "bertr", "mlflow.source.name": "C:\\Users\\bertr\\OneDrive\\Yohann\\Projet
+  ML\\Loan_API_ML_Project\\EDA and test script\\ModelCreater.py", "mlflow.source.type":
+  "LOCAL", "mlflow.source.git.commit": "ac09ed18f4d0aca9edf5f55315d151e223f606d1"}}'
+source_type: code

@@ -16,20 +16,37 @@ app.mount("/static", StaticFiles(directory=html_dir), name="static")
 
 templates = Jinja2Templates(directory=html_dir)
 
+# Main page
 @app.get("/", response_class=HTMLResponse)
-async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+async def read_main(request: Request):
+    return templates.TemplateResponse("main.html", {"request": request})
 
+# Loan Approval Prediction page
+@app.get("/loan-prediction", response_class=HTMLResponse)
+async def read_loan_prediction(request: Request):
+    return templates.TemplateResponse("loan_prediction.html", {"request": request})
 
-@app.post("/predict", response_class=HTMLResponse)
-async def predict_loan(
-    request: Request,
-    amount: int = Form(...),
-    debt: int = Form(...),
-    employment: int = Form(...),
-    policy: int = Form(...),
-    score: int = Form(...),
+# Handle form submission
+@app.post("/predict")
+async def predict(request: Request,
+    amount: float = Form(None),
+    debt: float = Form(None),
+    employment: float = Form(None),
+    policy: float = Form(None),
+    score: float = Form(None),
 ):
+    # Handle form submission and prediction here
+    # Convert empty values to None
+    if amount == "":
+        amount = None
+    if debt == "":
+        debt = None
+    if employment == "":
+        employment = None
+    if policy == "":
+        policy = None
+    if score == "":
+        score = None
     input_data = {
         "Amount Requested": amount,
         "Debt-To-Income Ratio": debt,
@@ -39,7 +56,9 @@ async def predict_loan(
     }
     prediction = predict_loan_acceptation(input_data)
 
-    return templates.TemplateResponse("result.html", {"request": request, "prediction": prediction})
+    return templates.TemplateResponse("loan_prediction.html", {"request": request, "prediction": prediction})
+
+
 
 if __name__ == "__main__":
     import uvicorn

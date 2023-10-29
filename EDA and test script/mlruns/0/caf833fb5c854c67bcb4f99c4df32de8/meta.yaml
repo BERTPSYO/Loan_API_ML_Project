@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/caf833fb5c854c67bcb4f99c4df32de8/artifacts
+end_time: 1698256307283
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: caf833fb5c854c67bcb4f99c4df32de8
+run_name: bustling-swan-105
+run_uuid: caf833fb5c854c67bcb4f99c4df32de8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698256200110
+status: 3
+tags: []
+user_id: bertr

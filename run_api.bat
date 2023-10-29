@@ -23,9 +23,13 @@ set HOST_PORT=9696
 set CONTAINER_PORT=9696
 
 :: Run the Docker container
-docker run --name %CONTAINER_NAME% -it --rm -p %HOST_PORT%:%CONTAINER_PORT% -d %IMAGE_NAME%:%TAG%
+docker run --name %CONTAINER_NAME% -it --rm -p %HOST_PORT%:%CONTAINER_PORT% -d %IMAGE_NAME%:%TAG% > nul
 
 echo Docker container started and ready to use
+echo Launching the API...
+timeout /t 3 > nul
+start http://localhost:9696
+echo API Started and Hosted on http://localhost:9696
 echo Simply press a key to close it
 
 
