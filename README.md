@@ -58,11 +58,13 @@ The project structure is organized as follows:
 
 
     .
-    ├── assets                  # 
-    │   └── Data                # 
-    |       ├──
-    |       └──
-    ├── docs                    # 
+    ├── assets                                    # All media/data files
+    │   └── Data                                  # Data files
+    |       ├── accepted_2007_to_2018Q4.csv.gz    # Dataset of the Accepted loan in a compressed csv format
+    |       └── rejected_2007_to_2018Q4.csv.gz    # Dataset of the Rejected loan in a compressed csv format
+    ├── EDA and test script                       # 
+    |   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
+    │   └── unit 
     ├── src                     # 
     ├── test                    # 
     ├── tools                   # 
