@@ -113,18 +113,6 @@ The project structure is organized as follows:
 
     
 
-
-
-
-
-main.py: FastAPI application.
-Loan_Preprocess_and_Model_Trainer/: Package containing preprocessing and model training modules.
-html/: Directory containing HTML templates for the web interface.
-Pipfile and Pipfile.lock: Dependency files for managing Python dependencies.
-Dockerfile: Docker configuration for containerization (optional).
-### Contributing
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
 Fork the repository.
 Create a new branch for your feature: git checkout -b feature-yourfeature.
 Commit your changes: git commit -m 'Add some feature'.
