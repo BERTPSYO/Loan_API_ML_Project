@@ -100,6 +100,14 @@ The project structure is organized as follows:
     |       ├── __init__.py                       #
     |       └── model_Pred_1.bin                  #
     |
+    ├── .gitattributes
+    ├── .gitignore
+    ├── Dockerfile
+    ├── LICENSE
+    ├── Pipfile
+    ├── Pipfile.lock
+    ├── README.md
+    └── run_api.bat
     
     
 
