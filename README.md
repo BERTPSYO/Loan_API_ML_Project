@@ -124,4 +124,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ### Acknowledgments
 Special thanks to the FastAPI and scikit-learn communities for providing excellent tools for building and deploying machine learning applications.
 Feel free to add your own acknowledgments and contributors here.
-arduino
+
