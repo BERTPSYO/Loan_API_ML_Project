@@ -57,25 +57,22 @@ The project structure is organized as follows:
 
 
 
-    .
-    ├── assets                                    # All media/data files
-    │   └── Data                                  # Data files
-    |       ├── accepted_2007_to_2018Q4.csv.gz    # Dataset of the Accepted loan in a compressed csv format
-    |       └── rejected_2007_to_2018Q4.csv.gz    # Dataset of the Rejected loan in a compressed csv format
+    .   
     ├── EDA and test script                       # Self explainatory
     |   ├── mlruns                                # Folder Containing the mlflow logging results i've made
     |   ├── DataExploration.ipynb                 # contains all the test for the models selection
     |   ├── ModelCreater.py                       # small script that uses the packages and the data to create a trained SGD Classifier model from it
     |   ├── ModelPred.ipynb                       # test script that helped me test my API laon prediciton 
-    │   └── model_Pred_1.bin                      # model built by the ModelCreater, contains the                 
-    ├── src                     # 
-    ├── test                    # 
-    ├── tools                   # 
+    │   └── model_Pred_1.bin                      # model built by the ModelCreater, contains the trained model, standard scaler, and numerical imputer                
+    ├── Packages                                   # 
+    ├── assets                                    # All media/data files
+    │   └── Data                                  # Data files
+    |       ├── accepted_2007_to_2018Q4.csv.gz    # Dataset of the Accepted loan in a compressed csv format
+    |       └── rejected_2007_to_2018Q4.csv.gz    # Dataset of the Rejected loan in a compressed csv format
+    ├── src                                       # 
     
 
-    ├── benchmarks          # Load and stress tests
-    │   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
-    │   └── unit 
+    
 
 
 
