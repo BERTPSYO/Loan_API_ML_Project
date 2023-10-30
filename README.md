@@ -89,13 +89,16 @@ The project structure is organized as follows:
     |   |   |
     |   |   ├── html                              #
     |   |   |   |
-    |   |   |   ├── loan_prediction.html          # Dataset of the Accepted loan in a compressed csv format
+    |   |   |   ├── loan_prediction.html          # 
     |   |   |   └── main.html                     #
     |   |   |
     |   |   └── main.py                           #
     |   |
     |   └── predictionModels                      #
     |       |
+    |       ├── ModelPred.py                      #
+    |       ├── __init__.py                       #
+    |       └── model_Pred_1.bin                  #
     |
     
     
