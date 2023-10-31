@@ -15,7 +15,6 @@ This repository contains an API for loan approval prediction. It uses a machine 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
@@ -110,14 +109,6 @@ The project structure is organized as follows:
     └── run_api.bat                               # Bat file to create the docker image, start the container and run the API
     
     
-
-### Contributing
-
-Fork the repository.
-Create a new branch for your feature: git checkout -b feature-yourfeature.
-Commit your changes: git commit -m 'Add some feature'.
-Push to the branch: git push origin feature-yourfeature.
-Create a new Pull Request.
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
