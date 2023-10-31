@@ -100,8 +100,8 @@ The project structure is organized as follows:
     |       ├── __init__.py                       # To make this directory a package loaded inside the docker
     |       └── model_Pred_1.bin                  # Trained model
     |
-    ├── .gitattributes                            # to manage 
-    ├── .gitignore                                #
+    ├── .gitattributes                            # to manage Lfs
+    ├── .gitignore                                # to 
     ├── Dockerfile                                #
     ├── LICENSE                                   #
     ├── Pipfile                                   #
