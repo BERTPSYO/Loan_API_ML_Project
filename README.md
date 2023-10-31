@@ -100,18 +100,18 @@ The project structure is organized as follows:
     |       ├── __init__.py                       # To make this directory a package loaded inside the docker
     |       └── model_Pred_1.bin                  # Trained model
     |
-    ├── .gitattributes                            # to manage Lfs
-    ├── .gitignore                                # to 
-    ├── Dockerfile                                #
-    ├── LICENSE                                   #
-    ├── Pipfile                                   #
-    ├── Pipfile.lock                              #
-    ├── README.md                                 #
-    └── run_api.bat                               #
+    ├── .gitattributes                            # Self explainatory
+    ├── .gitignore                                # Self explainatory
+    ├── Dockerfile                                # Docker config file
+    ├── LICENSE                                   # Self explainatory
+    ├── Pipfile                                   # managing docker depedencies
+    ├── Pipfile.lock                              # managing docker depedencies
+    ├── README.md                                 # this file
+    └── run_api.bat                               # Bat file to create the docker image, start the container and run the API
     
     
 
-    
+### Contributing
 
 Fork the repository.
 Create a new branch for your feature: git checkout -b feature-yourfeature.
