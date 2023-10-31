@@ -66,15 +66,15 @@ The project structure is organized as follows:
     |   ├── ModelPred.ipynb                       # test script that helped me test my API laon prediciton 
     │   └── model_Pred_1.bin                      # model built by the ModelCreater, contains the trained model, standard scaler, and numerical imputer              
     |
-    ├── Packages                                  # 
+    ├── Packages                                  # List of package not contained in the API docker container, can be installed
     |   |
-    |   ├── Loan_Preprocess_and_Model_Trainer     #
+    |   ├── Loan_Preprocess_and_Model_Trainer     # Package #1 Contains a data preprocessing script and a model training script
     |   |   |
-    |   |   ├── Model_Trainer.py                  #
-    |   |   ├── Preprocessing.py                  #
-    |   |   └── __init__.py                       #
+    |   |   ├── Model_Trainer.py                  # python script to train, test and log models
+    |   |   ├── Preprocessing.py                  # python script to preprocess the data for the models
+    |   |   └── __init__.py                       # To make this directory a package
     |   |
-    |   └── Setup.py                              #
+    |   └── Setup.py                              # To install this package
     |   
     ├── assets                                    # All media/data files
     |   |
@@ -83,24 +83,24 @@ The project structure is organized as follows:
     |       ├── accepted_2007_to_2018Q4.csv.gz    # Dataset of the Accepted loan in a compressed csv format
     |       └── rejected_2007_to_2018Q4.csv.gz    # Dataset of the Rejected loan in a compressed csv format
     |
-    ├── src                                       # 
+    ├── src                                       # API source code
     |   |
-    |   ├── API                                   #
+    |   ├── API                                   # Main API directory
     |   |   |
-    |   |   ├── html                              #
+    |   |   ├── html                              # list of HTML pages
     |   |   |   |
-    |   |   |   ├── loan_prediction.html          # 
-    |   |   |   └── main.html                     #
+    |   |   |   ├── loan_prediction.html          # HTML pages with input field to make the loan prediction
+    |   |   |   └── main.html                     # Main Landing Page
     |   |   |
-    |   |   └── main.py                           #
+    |   |   └── main.py                           # API main python script
     |   |
-    |   └── predictionModels                      #
+    |   └── predictionModels                      # First API microservices
     |       |
-    |       ├── ModelPred.py                      #
-    |       ├── __init__.py                       #
-    |       └── model_Pred_1.bin                  #
+    |       ├── ModelPred.py                      # get data in input and return the predicition using the trained model
+    |       ├── __init__.py                       # To make this directory a package loaded inside the docker
+    |       └── model_Pred_1.bin                  # Trained model
     |
-    ├── .gitattributes                            #
+    ├── .gitattributes                            # to manage 
     ├── .gitignore                                #
     ├── Dockerfile                                #
     ├── LICENSE                                   #
