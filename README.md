@@ -8,6 +8,14 @@
 
 This repository contains an API for loan approval prediction. It uses a machine learning model to predict whether a loan application should be accepted or rejected. The project also includes preprocessing and model training modules. The API allows users to input various loan application parameters and receive a prediction.
 
+- Use Docker to containerize the API
+- Fully working API built using FastAPI
+- Use a SGDClassifier Model with an accuracy of ~99.95% and a AUC_ROC of ~99,97%.
+- Use a Database of 6M of data of accepted and refused loan wich is biased toward accepeted loan ~10:1
+- Use Mlflow to log models performance. Simply type "mlflow ui" in a terminal inside "EDA and test script" to open the MLFLow API.
+- API can be easily expanded with multiple microservice
+- Updated models can be easily created by running the ModelCreater.py script. Only need to update the Data in assets/data and modify the data path in ModelCreater.py.
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -27,6 +35,7 @@ Before running the API, make sure you have the following prerequisites installed
 - Docker (tested on Docker Desktop)
 - Windows (Use .Bat file to run the API, but should work on other system)
 - Python 3.10 (Tested on Python 3.10.6, can normally work on other system)
+- Mlflow (optionnal :to manage/create new models)
 - Other configuration might work (with maybe a little bit of work) but aren't tested.
 
 
