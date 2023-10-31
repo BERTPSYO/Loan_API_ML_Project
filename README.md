@@ -47,7 +47,7 @@ Before running the API, make sure you have the following prerequisites installed
 
 2. Install the Modules (Optionnal : used for Creating/Updating a new Model in the case there's aditionnal Data):
   
-  Go to Packages, open a console and type : pip install .
+   Go to Packages, open a console and type : pip install .
   
 3. Run the "run_api.Bat" to create the Docker Image, create the Container and Start the API
   
