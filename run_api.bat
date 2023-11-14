@@ -10,8 +10,8 @@ if %errorlevel% neq 0 (
 
 :: Define the Docker image name and tag
 set IMAGE_NAME=pred_loan
-set TAG=v02
-set CONTAINER_NAME=predv02
+set TAG=v03
+set CONTAINER_NAME=predv03
 
 :: Check if the Docker image exists locally
 docker inspect %IMAGE_NAME%:%TAG% > nul 2>&1

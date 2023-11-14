@@ -9,9 +9,9 @@ from Loan_Preprocess_and_Model_Trainer import Preprocessing , Model_Trainer
 
 def main():
     #importing the data
-    df_accepted = pd.read_csv('../assets/data/accepted_2007_to_2018Q4.csv.gz', compression='gzip', header=0, sep=',', quotechar='\"')
+    df_accepted = pd.read_csv('../../../assets/data/accepted_2007_to_2018Q4.csv.gz', compression='gzip', header=0, sep=',', quotechar='\"')
         
-    df_rejected = pd.read_csv('../assets/data/rejected_2007_to_2018Q4.csv.gz', compression='gzip', header=0, sep=',', quotechar='\"')
+    df_rejected = pd.read_csv('../../../assets/data/rejected_2007_to_2018Q4.csv.gz', compression='gzip', header=0, sep=',', quotechar='\"')
 
 
     #preprocessing the data using the DataPreprocessing from the preprocessing script

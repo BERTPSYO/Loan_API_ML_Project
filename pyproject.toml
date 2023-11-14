@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "loan-api-ml-project"
+version = "0.3.0"
+description = ""
+authors = ["BERTPSYO <bertrandyohann2001@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "==1.5.3"
+numpy = "==1.23.5"
+matplotlib = "==3.7.1"
+scikit-learn = "==1.2.2"
+mlflow = "==2.7.1"
+gunicorn = "*"
+flask = "*"
+jinja2 = "*"
+fastapi = "*"
+uvicorn = { version = "*", extras = ["standard"] }
+python-multipart = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

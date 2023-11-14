@@ -2,10 +2,10 @@ from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
-import os
+from pathlib import Path
 
 # Assuming "main.py" is located in the "api" directory
-html_dir = os.path.join(os.path.dirname(__file__), "html")
+html_dir = Path(__file__).resolve().parent / "html"
 
 from src.predictionModels.ModelPred import predict_loan_acceptation
 

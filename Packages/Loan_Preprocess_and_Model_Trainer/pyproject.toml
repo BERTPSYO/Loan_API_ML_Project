@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "loan-preprocess-and-model-trainer"
+version = "0.2.0"
+description = ""
+authors = ["BERTPSYO <bertrandyohann2001@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+mlflow = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

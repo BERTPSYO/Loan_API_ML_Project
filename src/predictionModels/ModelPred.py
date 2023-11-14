@@ -4,12 +4,11 @@ import numpy as np
 import pandas as pd
 import json 
 
-
-import os
+from pathlib import Path
 
 #import the model
-script_dir = os.path.dirname(os.path.abspath(__file__))
-model_file_path = os.path.join(script_dir, 'model_Pred_1.bin')
+
+model_file_path = Path(__file__).resolve().parent / "model_Pred_1.bin"
 
 #unpack the scaler, numerical_imputer and model form the bin file
 with open(model_file_path, 'rb') as f_in:

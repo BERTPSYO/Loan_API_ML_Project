@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/8e53a11b66604dfb822a3353341cd18b/artifacts
+end_time: 1699912243082
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8e53a11b66604dfb822a3353341cd18b
+run_name: wistful-squid-778
+run_uuid: 8e53a11b66604dfb822a3353341cd18b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699912238265
+status: 3
+tags: []
+user_id: bertr
