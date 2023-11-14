@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/a088c92ec8464ef8a4b598bff624984a/artifacts
+end_time: 1699987747002
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a088c92ec8464ef8a4b598bff624984a
+run_name: indecisive-crane-599
+run_uuid: a088c92ec8464ef8a4b598bff624984a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699987631439
+status: 3
+tags: []
+user_id: bertr

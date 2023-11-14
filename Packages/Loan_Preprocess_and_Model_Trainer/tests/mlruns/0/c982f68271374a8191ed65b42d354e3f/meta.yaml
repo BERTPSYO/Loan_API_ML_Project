@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/Loan_API_ML_Project/src/predictionModel1/mlruns/0/c982f68271374a8191ed65b42d354e3f/artifacts
+end_time: 1699987755583
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c982f68271374a8191ed65b42d354e3f
+run_name: trusting-fish-873
+run_uuid: c982f68271374a8191ed65b42d354e3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699987749284
+status: 3
+tags: []
+user_id: bertr

@@ -1,0 +1,9 @@
+digest: e76acb1b
+name: dataset
+profile: '{"features_shape": [7477361, 10], "features_size": 74773610, "features_nbytes":
+  598188880}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float64\", \"shape\": [-1, 10]}}]", "targets": null}}'
+source: '{"tags": {"mlflow.user": "bertr", "mlflow.source.name": "modelCreater.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "e8f2968c0e16ad10dd416d2359049165c50640e8"}}'
+source_type: code

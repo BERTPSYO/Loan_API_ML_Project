@@ -67,22 +67,28 @@ The project structure is organized as follows:
 
     .   
     ├── EDA and test script                       # Self explainatory
-    |   |
-    |   ├── mlruns                                # Folder Containing the mlflow logging results i've made
-    |   ├── DataExploration.ipynb                 # contains all the test for the models selection
-    |   ├── ModelCreater.py                       # small script that uses the packages and the data to create a trained SGD Classifier model from it
-    |   ├── ModelPred.ipynb                       # test script that helped me test my API laon prediciton 
-    │   └── model_Pred_1.bin                      # model built by the ModelCreater, contains the trained model, standard scaler, and numerical imputer              
+    |   |    
+    |   ├── DataExploration.ipynb                 # contains all the test for the models selection   
+    |   └── ModelPred.ipynb                       # test script that helped me test my API laon prediciton 
     |
     ├── Packages                                  # List of package not contained in the API docker container, can be installed
     |   |
-    |   ├── Loan_Preprocess_and_Model_Trainer     # Package #1 Contains a data preprocessing script and a model training script
-    |   |   |
-    |   |   ├── Model_Trainer.py                  # python script to train, test and log models
-    |   |   ├── Preprocessing.py                  # python script to preprocess the data for the models
-    |   |   └── __init__.py                       # To make this directory a package
-    |   |
-    |   └── Setup.py                              # To install this package
+    |   └── Loan_Preprocess_and_Model_Trainer     # Package #1 Contains a data preprocessing script and a model training script
+    |       |
+    |       ├── loan_preprocess_and_model_trainer # floder containing the python script contained in the package
+    |       |   |
+    |       |   ├── Model_Trainer.py               # python script to train, test and log models
+    |       |   ├── Preprocessing.py              # python script to preprocess the data for the models
+    |       |   └── __init__.py                   # To make this directory a package
+    |       |   
+    |       ├── test
+    |       |   |
+    |       |   ├── mlruns                         # Folder Containing the mlflow logging results i've made
+    |       |   ├── ModelCreater.py                # small script that uses the packages and the data to create a trained SGD Classifier model from it
+    |       |   └── model_Pred_1.bin               # model built by the ModelCreater, contains the trained model, standard scaler, and numerical imputer 
+    |       |
+    |       ├── pyproject.toml                    # toml to manage poetry dependencies
+    |       └── README.md                         # read me file documenting the packag
     |   
     ├── assets                                    # All media/data files
     |   |
@@ -112,8 +118,8 @@ The project structure is organized as follows:
     ├── .gitignore                                # Self explainatory
     ├── Dockerfile                                # Docker config file
     ├── LICENSE                                   # Self explainatory
-    ├── Pipfile                                   # managing docker depedencies
-    ├── Pipfile.lock                              # managing docker depedencies
+    ├── pyproject.toml                            # managing docker API depedencies
+    ├── poetry.lock                               # managing docker API depedencies
     ├── README.md                                 # this file
     └── run_api.bat                               # Bat file to create the docker image, start the container and run the API
     
